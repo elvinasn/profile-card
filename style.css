@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body, html{
+    overflow: hidden;
+}
 body {
     height: 100vh;
     width: 100vw;
     position: relative;
-    overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 12px;
     background-color: hsl(185, 75%, 39%);
     background-repeat: no-repeat;
-    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,14 +23,12 @@ body::before, body::after{
     z-index: -1;
 }
 body::before{
-    top: 0%;
-    left: 0%;
     background: url(images/bg-pattern-top.svg) no-repeat bottom right;
 }
 body::after{
     top: 100%;
     left: 100%;
-    background: url(images/bg-pattern-bottom.svg) no-repeat top left;
+    background: url(images/bg-pattern-bottom.svg) no-repeat;
 }
 .card{
     background-color: white;
