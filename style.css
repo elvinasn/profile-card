@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-color: hsl(185, 75%, 39%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::before, body::after{
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+body::before{
+    background: url(images/bg-pattern-top.svg) no-repeat bottom right;
+}
+body::after{
+    top: 100%;
+    left: 100%;
+    background: url(images/bg-pattern-bottom.svg) no-repeat;
+}
+.card{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+    box-shadow: 0px 6px 50px 0px hsl(227, 10%, 46%);
+
+}
+.card__header-img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__profile-pic{
+    position: absolute;
+    top: 92px;
+    border-radius: 53px;
+    border: 5px solid white;
+}
+.card__identity{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+.card__location{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.card__stats{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid hsl(0, 0%, 90%);
+}
+.stats__sect{
+    width: 25%;
+}
+.stats__sect .bold{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.stats__sect .gray{
+    margin-top: 4px;
+}
+.bold{
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+.no-margins{
+    margin: 0;
+    padding: 0;
+}
+.gray{
+    color: hsl(0, 0%, 59%)
+}
