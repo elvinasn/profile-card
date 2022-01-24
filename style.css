@@ -8,6 +8,7 @@ body {
     font-size: 12px;
     background-color: hsl(185, 75%, 39%);
     background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +22,14 @@ body::before, body::after{
     z-index: -1;
 }
 body::before{
+    top: 0%;
+    left: 0%;
     background: url(images/bg-pattern-top.svg) no-repeat bottom right;
 }
 body::after{
     top: 100%;
     left: 100%;
-    background: url(images/bg-pattern-bottom.svg) no-repeat;
+    background: url(images/bg-pattern-bottom.svg) no-repeat top left;
 }
 .card{
     background-color: white;
